@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Block vs Inline</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+h1{
+    color: #0e31a5;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.block-container{
+    border: 2px solid #617fdf;
+    padding: 25px;
+    border-radius: 12px;
+    width: 180px;
+}
+
+.block{
+    background-color: #b8c2df;
+    border: 2px solid #3054ca;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.inline-container{
+    border: 2px solid #c58e31;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.inline{
+    display: inline-block;
+    background-color: #dbceb5;
+    border: 2px solid #bb7700;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.label{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Major Versions of HTML</h1>
+
+<div class="container">
+
+    <div>
+        <div class="block-container">
+            <div class="block">Box 1</div>
+            <div class="block">Box 2</div>
+            <div class="block">Box 3</div>
+            <div class="block">Box 4</div>
+        </div>
+        <div class="label">Block-Level Element</div>
+    </div>
+
+    <div>
+        <div class="inline-container">
+            <span class="inline">Box 1</span>
+            <span class="inline">Box 2</span>
+            <span class="inline">Box 3</span>
+            <span class="inline">Box 4</span>
+        </div>
+        <div class="label">Inline Element</div>
+    </div>
+
+</div>
+
+</body>
+</html>

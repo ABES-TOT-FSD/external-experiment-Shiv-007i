@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Movie Clone</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #e50914;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .nav-links a {
+            color: #e5e5e5;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #b3b3b3;
+        }
+
+        .hero {
+            height: 650px; 
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #111 100%), 
+                        url('https://images.wallpapersden.com/image/download/anime-girl-looking-for-sunset_bmVsZmuUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+            
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 50px;
+        }
+
+        .hero-content {
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        .btn {
+            padding: 10px 25px;
+            font-size: 18px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 20px 50px;
+        }
+
+        .row-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-left: 4px solid #e50914;
+            padding-left: 10px;
+        }
+
+        .movie-grid {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .movie-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            min-width: 250px;
+            height: 150px;
+            background-color: #222;
+            border-radius: 4px;
+            transition: transform 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="logo">ANIMEWATCH</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Newest</a>
+            <a href="#">My List</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Sunset Journey</h1>
+            <p>A breathtaking tale of adventure and mystery. Watch the latest anime hit now.</p>
+            <button class="btn">▶ Play Now</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="row-title">Trending Now</h2>
+        <div class="movie-grid">
+            <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.i4J_nm1eNKu6bMKzxQV0jQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Anime 1"></div>
+            <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.mNMqJMF4XRUPWv1uHHF9SwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Anime 2"></div>
+            <div class="card"><img src="https://wallpapers.com/images/featured/best-anime-syxejmngysolix9m.jpg" alt="Anime 3"></div>
+            <div class="card"><img src="https://th.bing.com/th/id/OIP.YsyJWrwm05qhsR4GFSUEZgHaIf?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Anime 4"></div>
+            <div class="card"><img src="https://www.entoin.com/images/badaa2.jpg" alt="Anime 5"></div>
+            <div class="card"><img src="https://img6.arthub.ai/6495ffe6-b552.webp" alt="Anime 6"></div>
+        </div>
+
+        <h2 class="row-title">Action Hits</h2>
+        <div class="movie-grid">
+            <div class="card"><img src="https://th.bing.com/th/id/OIP.bOxoe_eQIvv4FIE65wsdXQHaEV?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Action 1"></div>
+            <div class="card"><img src="https://beebom.com/wp-content/uploads/2023/01/straw-hats.jpg" alt="Action 2"></div>
+            <div class="card"><img src="https://th.bing.com/th/id/OIP.LlqWqVa7SzS5oJy53xHAWgHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Action 3"></div>
+            <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.vT-QG2H9hZUj-Geo5zidyAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Action 4"></div>
+        </div>
+    </div>
+
+</body>
+</html>

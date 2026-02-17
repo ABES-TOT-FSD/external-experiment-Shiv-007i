@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Box Model</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    color: black;
+    margin-top:40px;
+}
+
+.margin{
+    background-color:#e57a4e;
+    padding:40px;
+    width:500px;
+    margin:50px auto;
+}
+
+.border{
+    background-color:#2b92b1;
+    padding:40px;
+}
+
+.padding{
+    background-color:#aa8737;
+    padding:40px;
+}
+
+.content{
+    background-color:#4b766f;
+    padding:80px;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS Box Model</h1>
+
+<div class="margin">
+    Margin
+    <div class="border">
+        Border
+        <div class="padding">
+            Padding
+            <div class="content">
+                Content
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
